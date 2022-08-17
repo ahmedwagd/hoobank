@@ -13,7 +13,7 @@ function Navbar() {
             className={`font-poppins font-normal cursor-pointer text-[16px] text-white ${i === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
             id={`#${link.id}`}
             key={`${link.title}`}
-          >{link.title}</li>
+          ><a href={`#${link.id}`}>{link.title}</a></li>
         ))}
       </ul>
       <div className="menu-links sm:hidden flex flex-1 justify-end items-center" onClick={() => setToggle(prev => !prev)}>
